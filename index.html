@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Mi Gradución</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"> 
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">
+        
+        <span class="heading-subtext"> </span>
+      </h1>
+    </header>
+    <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">Graduados</a> 
+    <section class="section">
+      <h2 class="sub-heading">¡FELICIDADES!</h2>
+      <h3 class="details-heading">"En este día de graduación, les deseamos todas las cosas buenas que la vida puede ofrecerles. Que este día sea un hito que les traiga gratos recuerdos y que su futuro sea más brillante que este día".
+</h3>
+    </section>
+    <section class="section">
+      <h2 class="sub-heading">Fecha</h2>
+      <div class="details">
+        <i class="fas fa-calendar-check"></i>
+        <h3 class="details-heading">¿CUANDO?</h3>
+        <h3 class="details-heading">Julio 7 de 2023 </h3>
+        <a class="details-heading" title="Add to Calendar" rel="noopener" href="https://calendar.google.com/calendar/u/0/r/day/2023/7/15?pli=1" target="_blank" rel="nofollow">Añadir a calendario</a>
+      </div>
+      <div class="details">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 class="sub-heading">Ubicación de la Misa</h3>
+        <p><a class="details-heading" rel="noopener" href="https://goo.gl/maps/rX61Z7roPFEa1kNe9">Templo de Nuestra Señora de los Angeles</a></p>
+          <h3 class="details-heading">Hora de la Misa 8:00pm</h3>
+      </div>
+        <div class="details">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 class="sub-heading">Ubicación de la Ceremonia</h3>
+        <p><a class="details-heading" rel="noopener" href="https://goo.gl/maps/FgVgF6zCrz7mKnYk7">Salón Casa Toledo</a></p>
+          <h3 class="details-heading">Hora del evento 10:00pm</h3>
+      </div>
+        <div class="details">
+        <h3 class="sub-heading"id="rsvp">Graduados</h3>
+        <img class="resort-image" src="./img/graduadoss.jpg" alt="Resort" />
+      </div>
+        <div class="details">
+          <h3 class="details-heading"> “No sigas por donde el camino te lleve, avanza por donde no hay camino y deja un rastro.” </h3>
+            <h3 class="details-heading"> SIEMPRE GRANDES, SIEMPRE LOBOS </h3>
+      </div>
+      </div>
+    </section>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var rsvpButton = document.getElementById('rsvpButton')
+      rsvpButton.addEventListener('click',hideButton,false);
+
+      function hideButton() {
+        rsvpButton.style.display = 'none';
+      }   
+    </script>
+  </body>
+</html>
